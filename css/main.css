@@ -1,0 +1,298 @@
+body {
+    width: 100vw;
+    margin: 0;
+    background-color: #ffffff;
+    opacity: 1;
+    background-image:  radial-gradient(#74873c 2px, transparent 2px), radial-gradient(#74873c 2px, #ffffff 2px);
+    background-size: 80px 80px;
+    background-position: 0 0,40px 40px;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Righteous', cursive;
+}
+
+#header-principal {
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+    'logo nav nav'
+    'contenido imagen imagen'
+    ;
+    grid-template-columns: 550px auto auto;
+}
+
+
+
+.logo-principal {
+    grid-area: logo;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.header-contenido {
+    grid-area: contenido;
+}
+
+.imagen-header {
+    grid-area: imagen;
+}
+
+
+
+
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    /* width: 100%; */
+    justify-content: space-around;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.logo-principal a {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo-principal a img {
+    width: 300px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 5px 20px 5px 20px;
+}
+
+nav ul li a:link {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.header-contenido {
+    display: flex;
+    flex-flow: row wrap;
+    height: 400px;
+    padding: 30px;
+}
+
+
+.imagen-header {
+    /* width: 50%; */
+    display: flex;
+    /* align-items: center; */
+}
+
+.imagen-header img {
+    /* overflow: auto; */
+    border-radius: 12px;
+    transform: scale(.8);
+}
+
+#parrafo-boton {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#parrafo-boton p {
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+}
+
+#parrafo-boton p strong {
+    font-weight: 700;
+}
+
+#boton-wpp a {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: solid 2px #25D366;
+    
+    box-shadow: -3px 7px 9px -2px rgba(0,0,0,0.66);
+    -webkit-box-shadow: -3px 7px 9px -2px rgba(0,0,0,0.66);
+    -moz-box-shadow: -3px 7px 9px -2px rgba(0,0,0,0.66);
+
+    border-radius: 12px;
+    padding: 5px;
+
+    transition: .2s ease-in-out;
+
+}
+
+#boton-wpp a:hover {
+    background-color: #25D366;
+    color: black;
+    transform: scale(1.05);
+}
+
+#boton-wpp a {
+    text-decoration: none;
+}
+
+#boton-wpp a img {
+    width: 50px;
+    height: 50px;
+}
+
+#boton-wpp a p {
+    color: black;
+}
+
+/* estilos para nav hover */
+
+nav ul li a {
+    transition: .2s ease-in-out;
+
+}
+
+nav ul li a:hover {
+    color:rgb(4, 119, 21);
+    box-shadow: inset 0 -2px 0 0 rgb(4, 119, 21);
+}
+
+/* =========== */
+/* estilos inicio main */
+
+#main-inicio {
+    background-color: #74b83d;
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+    'texto-main imagen-main imagen-main';
+    grid-template-columns: 550px 1fr 1fr;
+}
+
+#texto-main {
+    grid-area: texto-main;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+#texto-main p {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+#imagen-main {
+    grid-area: imagen-main;
+    display: flex;
+    justify-content: center;
+}
+
+#texto-main ul {
+    text-align: center;
+    padding: 0px;
+    list-style-type: none;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.wave-top {
+    margin-bottom: -20px;
+}
+
+/* ============= */
+/* estilos footer */
+
+footer {
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#footer-rrss {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#footer-rrss a {
+    padding: 10px;
+}
+
+
+#footer-rrss a img {
+    width: 40px;
+}
+
+/* ====================== */
+/* estilos para servicios.htlml */
+
+/* grid layout */
+
+.header-secundario {
+    display: grid;
+    grid-template-areas:
+    'logo nav nav'
+    'titulo titulo titulo'
+    'item-1 item-2 item-3'
+    'item-4 item-5 item-6'
+    ;
+    grid-row-gap: 40px;
+}
+
+#titulo-servicios {
+    grid-area: titulo;
+    text-align: center;
+}
+
+#item-1 {
+    grid-area: item-1;
+}
+
+#item-2 {
+    grid-area: item-2;
+}
+
+#item-3 {
+    grid-area: item-3;
+}
+
+#item-4 {
+    grid-area: item-4;
+}
+
+#item-5 {
+    grid-area: item-5;
+}
+
+#item-6 {
+    grid-area: item-6;
+}
+
+.subtitulo {
+    text-align: center;
+}
+/* ====================== */
+
+#main-servicios {
+    background-color: #74b83d;
+    padding: 20px;
+}
