@@ -289,10 +289,42 @@ footer {
 
 .subtitulo {
     text-align: center;
+    transition: .2s ease-in-out;
 }
+
+.subtitulo:link {
+    color: black;
+    text-decoration: none;
+}
+
+.subtitulo:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.subtitulo:hover {
+    color: rgb(4, 119, 21);
+    transform: scale(1.05);
+}
+
 /* ====================== */
 
 #main-servicios {
     background-color: #74b83d;
     padding: 20px;
+}
+
+.contenedor-servicios {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contenedor-servicios img, .texto-servicios {
+    width: 40%;
+}
+
+.margen {
+    margin: 100px 0 100px 0;
 }
