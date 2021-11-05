@@ -54,6 +54,7 @@ nav{
 }
 
 .logo-principal a {
+    width: fit-content;
     display: flex;
     justify-content: flex-start;
 }
@@ -247,7 +248,8 @@ footer {
 
 /* grid layout */
 
-.header-secundario {
+.header-servicios {
+    padding: 20px;
     display: grid;
     grid-template-areas:
     'logo nav nav'
@@ -256,6 +258,7 @@ footer {
     'item-4 item-5 item-6'
     ;
     grid-row-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 #titulo-servicios {
@@ -327,4 +330,194 @@ footer {
 
 .margen {
     margin: 100px 0 100px 0;
+}
+/* =================== */
+/* estilos para nosotros.html */
+
+.header-nosotros {
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+    'logo nav nav'
+    'titulo-nosotros titulo-nosotros titulo-nosotros'
+    'imagen-nosotros  texto-nosotros texto-nosotros'
+    ;
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#titulo-nosotros {
+    grid-area: titulo-nosotros;
+    text-align: center;
+}
+
+.imagen-nosotros {
+    grid-area: imagen-nosotros;
+}
+
+.texto-nosotros {
+    grid-area: texto-nosotros;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+#main-nosotros {
+    background-color: #74b83d;
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+.div-persona {
+    width: 80%;
+    margin: 50px 0 50px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.avatar-nosotros {
+    border-radius: 50%;
+}
+
+.rrss-nosotros {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.rrss-nosotros a img {
+    width: 32px;
+    height: 32px;
+}
+/* ======================= */
+/* estilos para portfolio.html */
+
+.header-portfolio {
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+    'logo nav nav'
+    'titulo-portfolio titulo-portfolio titulo-portfolio'
+    'descripcion-portfolio  descripcion-portfolio descripcion-portfolio'
+    ;
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#titulo-portfolio {
+    grid-area: titulo-portfolio;
+    text-align: center;
+
+}
+
+#descripcion-portfolio {
+    margin: 30px;
+    width: 80%;
+    grid-area: descripcion-portfolio;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.2em;
+    font-weight: 600;
+    justify-self: center;
+}
+
+#main-portfolio {
+    background-color: #74b83d;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    justify-items: center;
+}
+
+.contenedor-portfolio {
+    transition: .2s ease-in-out;
+}
+
+.contenedor-portfolio:hover {
+    transform: scale(1.1);
+}
+
+/* ======================= */
+/* estilos para contacto.html */
+
+.header-contacto {
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+    'logo nav nav'
+    'titulo-contacto titulo-contacto titulo-contacto'
+    'rrss rrss rrss'
+    ;
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#titulo-contacto {
+    grid-area: titulo-contacto;
+    text-align: center;
+}    
+
+.contenedor-rrss-contacto {
+    margin: 50px 0 50px 0;
+    grid-area: rrss;
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    justify-self: center;
+    justify-content: space-around;
+}
+
+.contenedor-rrss-contacto a img {
+    width: 100px;
+}
+
+.contenedor-rrss-contacto a{
+    transition: .2s ease-in-out;
+}
+
+.contenedor-rrss-contacto a:hover {
+    transform: scale(1.2);
+}
+
+#main-contacto {
+    background-color: #74b83d;
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/* formulario contacto */
+
+#main-contacto h2 {
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input {
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+}
+
+.form button {
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
 }
