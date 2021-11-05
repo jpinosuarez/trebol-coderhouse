@@ -436,6 +436,88 @@ footer {
     justify-items: center;
 }
 
-.conteneor-portfolio {
+.contenedor-portfolio {
     transition: .2s ease-in-out;
+}
+
+.contenedor-portfolio:hover {
+    transform: scale(1.1);
+}
+
+/* ======================= */
+/* estilos para contacto.html */
+
+.header-contacto {
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+    'logo nav nav'
+    'titulo-contacto titulo-contacto titulo-contacto'
+    'rrss rrss rrss'
+    ;
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#titulo-contacto {
+    grid-area: titulo-contacto;
+    text-align: center;
+}    
+
+.contenedor-rrss-contacto {
+    margin: 50px 0 50px 0;
+    grid-area: rrss;
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    justify-self: center;
+    justify-content: space-around;
+}
+
+.contenedor-rrss-contacto a img {
+    width: 100px;
+}
+
+.contenedor-rrss-contacto a{
+    transition: .2s ease-in-out;
+}
+
+.contenedor-rrss-contacto a:hover {
+    transform: scale(1.2);
+}
+
+#main-contacto {
+    background-color: #74b83d;
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/* formulario contacto */
+
+#main-contacto h2 {
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input {
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+}
+
+.form button {
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
 }
