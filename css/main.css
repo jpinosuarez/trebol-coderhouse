@@ -13,7 +13,7 @@ h1, h2, h3 {
     font-family: 'Righteous', cursive;
 }
 
-#header-principal {
+/* #header-principal {
     padding: 20px;
     display: grid;
     grid-template-areas:
@@ -21,7 +21,7 @@ h1, h2, h3 {
     'contenido imagen imagen'
     ;
     grid-template-columns: 550px auto auto;
-}
+} */
 
 
 
