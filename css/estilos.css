@@ -1,5 +1,5 @@
 #logo-principal {
-    width: 300px;
+    width: 200px;
 }
 
 body {
@@ -85,8 +85,4 @@ background-size: cover;
 
 .iconos-servicios {
     width: 32px;
-}
-
-#footer-rights {
-    width: fit-content;
 }

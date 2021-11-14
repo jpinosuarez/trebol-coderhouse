@@ -21,7 +21,7 @@
 <body>
     <header id="header-principal">
         <!-- Bootstrap Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom mb-5">
             <div class="container-fluid">
                 <a id="logo-principal" class="navbar-brand" href="#">
                     <img src="public/trebol-logo.png" alt="trebol-logo" id="logo-principal">
@@ -29,7 +29,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent pe-2">
+                <div class="collapse navbar-collapse pe-2" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto nav-lista">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">INICIO</a>
@@ -50,7 +50,6 @@
                 </div>
             </div>
         </nav>
-        <hr class="solid">
         <!-- =================== -->
         <div class="container col-xxl-8 px-4 py-3 ">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -60,7 +59,10 @@
                 <div class="col-lg-6">
                     <h1 class="display-5 fw-bold lh-1 mb-3">LLEVÁ EL MARKETING DIGITAL DE TU EMPRENDIMIENTO AL SIGUIENTE NIVEL</h1>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-wpp btn-lg px-4 me-md-2"><i class="bi bi-whatsapp"></i> CONTACTANOS!</button>
+                        <a href="https://api.whatsapp.com/send?phone=2944351994" target="_blank"><button type="button" class="btn btn-wpp btn-lg px-4 me-md-2">
+                          <i class="bi bi-whatsapp"></i> CONTACTANOS!
+                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -114,8 +116,7 @@
     </main>
 
     <footer>
-      <hr class="solid">
-      <div id="contenedor-footer" class="row d-flex justify-content-between align-items-center">
+      <div id="contenedor-footer" class="d-flex flex-wrap justify-content-between align-items-center border-top p-3 m-4">
         <div class="col-md-2 p-2 d-flex align-items-center">
           <img id="logo-alt" src="public/chiquito-02.png" alt="logo-alt">
           <span>© 2021 Trébol</span>
