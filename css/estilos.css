@@ -86,3 +86,19 @@ background-size: cover;
 .iconos-servicios {
     width: 32px;
 }
+
+/* carousel */
+.carousel-item {
+    height: 32rem;
+    background-color: #777;
+    color: white;
+    position: relative;
+}
+
+.contenedor-header {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding-bottom: 50px;
+}
