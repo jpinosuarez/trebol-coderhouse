@@ -131,3 +131,8 @@ background-size: cover;
 #carousel-item-3 {
     background-image: url(../public/slide-3.jpg);
 }
+
+.imagen-perfil {
+    border-radius: 53% 47% 48% 52% / 27% 28% 72% 73% ;
+}
+
