@@ -21,7 +21,7 @@
 <body>
     <header id="header-principal">
         <!-- Bootstrap Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light border-bottom mb-5">
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom mb-3">
             <div class="container-fluid">
                 <a id="logo-principal" class="navbar-brand" href="#">
                     <img src="public/trebol-logo.png" alt="trebol-logo" id="logo-principal">
@@ -50,37 +50,82 @@
                 </div>
             </div>
         </nav>
-        <!-- =================== -->
-        <div class="container col-xxl-8 px-4 py-3 ">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="public/imagen-header.jpg" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width="700" height="auto" loading="lazy">
-                </div>
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold lh-1 mb-3">LLEVÁ EL MARKETING DIGITAL DE TU EMPRENDIMIENTO AL SIGUIENTE NIVEL</h1>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <a href="https://api.whatsapp.com/send?phone=2944351994" target="_blank"><button type="button" class="btn btn-wpp btn-lg px-4 me-md-2">
-                          <i class="bi bi-whatsapp"></i> CONTACTANOS!
-                        </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- Bootstrap carousel -->
+<div id="mi-carousel" class="carousel slide" data-bs-ride ="carousel">
+  <div class="carousel-indicators">
+      <button type="button" data-bs-target="#mi-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#mi-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#mi-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <div id="carousel-item-1" class="overlay-image"></div>
+              <div class="container contenedor-header w-75">
+                  <h1>ADMINISTRACIÓN DE REDES SOCIALES</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sequi molestiae adipisci assumenda. Consequuntur excepturi qui blanditiis totam, beatae soluta!</p>
+                  <a href="#adm-rrss" class="btn btn-lg btn-ver-mas">Ver más</a>
+              </div>    
+      </div>
+      <div class="carousel-item">
+          <div id="carousel-item-2" class="overlay-image"></div>
+              <div class="container contenedor-header w-75">
+                  <h1>DISEÑO Y DESARROLLO WEB</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sequi molestiae adipisci assumenda. Consequuntur excepturi qui blanditiis totam, beatae soluta!</p>
+                  <a href="#dw" class="btn btn-lg btn-ver-mas">Ver más</a>
+              </div>   
+      </div>
+      <div class="carousel-item">
+          <div id="carousel-item-3" class="overlay-image"></div>
+              <div class="container contenedor-header w-75">
+                  <h1>DISEÑO GRÁFICO</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sequi molestiae adipisci assumenda. Consequuntur excepturi qui blanditiis totam, beatae soluta!</p>
+                  <a href="#dg" class="btn btn-lg btn-ver-mas">Ver más</a>
+              </div>   
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#mi-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mi-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+      <!-- ======================= -->
     </header>
 
     <main>
+      <section>
+        <div class="container col-xxl-8 px-4 py-3 ">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                  <img src="public/imagen-header.jpg" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width="700" height="auto" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                  <h1 class="display-5 fw-bold lh-1 mb-3">LLEVÁ EL MARKETING DIGITAL DE TU EMPRENDIMIENTO AL SIGUIENTE NIVEL</h1>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                      <a href="https://api.whatsapp.com/send?phone=2944351994" target="_blank"><button type="button" class="btn btn-wpp btn-lg px-4 me-md-2">
+                        <i class="bi bi-whatsapp"></i> CONTACTANOS!
+                      </button>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+      </section>
       <section class="main-con-fondo">
           <!-- Bootstrap -->
           <div class="container px-4 py-5" id="hanging-icons">
-              <h2 class="pb-2 border-bottom">LO QUE TENEMOS PARA OFRECERTE</h2>
+              <h2 class="pb-2 border-bottom">SERVICIOS</h2>
               <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
                 <div class="col d-flex align-items-start">
                   <div class="icon-square text-dark flex-shrink-0 me-3">
                     <img class="iconos-servicios" src="public/social-media.png" alt="social media">
                   </div>
                   <div>
-                    <h2>ADMINISTRACIÓN DE REDES SOCIALES</h2>
+                    <h2>REDES SOCIALES</h2>
                     <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
                     <a href="pages/servicios.html#adm-rrss" class="btn btn-ver-mas">
                       VER MÁS
@@ -92,7 +137,7 @@
                     <img class="iconos-servicios"  src="public/website-design.png" alt="website design">
                   </div>
                   <div>
-                    <h2>DISEÑO Y DESARROLLO WEB</h2>
+                    <h2>DESARROLLO WEB</h2>
                     <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
                     <a href="pages/servicios.html#dw" class="btn btn-ver-mas">
                       VER MÁS
@@ -104,7 +149,7 @@
                     <img class="iconos-servicios"  src="public/graphic-design.png" alt="graphic design">
                   </div>
                   <div>
-                    <h2>DISEÑO GRÁFICO Y BRANDING</h2>
+                    <h2>DISEÑO GRÁFICO</h2>
                     <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
                     <a href="pages/servicios.html#dg" class="btn btn-ver-mas">
                       VER MÁS
