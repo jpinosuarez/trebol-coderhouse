@@ -136,3 +136,34 @@ background-size: cover;
     border-radius: 53% 47% 48% 52% / 27% 28% 72% 73% ;
 }
 
+#tarjeta-1 {
+    background-image: url(../public/tarjeta-1.jpg);s
+}
+
+#tarjeta-2 {
+    background-image: url(../public/tarjeta-2.jpg);
+}
+
+#tarjeta-3 {
+    background-image: url(../public/tarjeta-3.jpg);
+}
+
+.card {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.overlay-image-servicios {
+    position: absolute;
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-bg-black {
+    background-color: rgb(0, 0, 0);
+}
+
