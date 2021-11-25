@@ -4,82 +4,184 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trébol - Inicio</title>
-    <link rel="stylesheet" href="css/main.css">
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- ================= -->
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="css/estilos.css">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet">
     <!-- Google fonts -->
+    <title>Trébol - Inicio</title>
 </head>
 <body>
     <header id="header-principal">
-        <div class="logo-principal">
-            <a href="index.html" ><img src="public/trebol-logo.png" alt=""></a>
-        </div>    
-        <nav>
-            <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="pages/servicios.html">SERVICIOS</a></li>
-                <li><a href="pages/nosotros.html">NOSOTROS</a></li>
-                <li><a href="pages/portfolio.html">PORTFOLIO</a></li>
-                <li><a href="pages/contacto.html">CONTACTO</a></li>
-                <span class="line"></span>
-            </ul>
-        </nav>
-        <div class="header-contenido">
-            <div id="parrafo-boton">
-                <p>LLEVÁ EL <strong>MARKETING DIGITAL</strong> DE TU EMPRENDIMIENTO AL SIGUIENTE NIVEL</p>
-                <div id="boton-wpp">
-                    <a href="https://wa.me/5492944351994/?text=Hola!%20Quisiera%20contactarme%20con%20ustedes." target="_blank">
-                        <p>CONTACTANOS!</p>
-                        <img src="public/wpp_Mesa de trabajo 1.png" alt="">
-                    </a>    
+        <!-- Bootstrap Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom mb-3">
+            <div class="container-fluid">
+                <a id="logo-principal" class="navbar-brand" href="#">
+                    <img src="public/trebol-logo.png" alt="trebol-logo" id="logo-principal">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse pe-2" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto nav-lista">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/portfolio.html">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>  
-        <div class="imagen-header">
-            <div id="imagen">    
-                <img src="public/marketing-digital-848x400.jpg" alt="foto marketing digital">
-            </div>    
-        </div>
-        
+        </nav>
+<!-- Bootstrap carousel -->
+<div id="mi-carousel" class="carousel slide" data-bs-ride ="carousel">
+  <div class="carousel-indicators">
+      <button type="button" data-bs-target="#mi-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#mi-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#mi-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <div id="carousel-item-1" class="overlay-image"></div>
+              <div class="container contenedor-header w-75">
+                  <h1>ADMINISTRACIÓN DE REDES SOCIALES</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sequi molestiae adipisci assumenda. Consequuntur excepturi qui blanditiis totam, beatae soluta!</p>
+                  <a href="#adm-rrss" class="btn btn-lg btn-ver-mas">Ver más</a>
+              </div>    
+      </div>
+      <div class="carousel-item">
+          <div id="carousel-item-2" class="overlay-image"></div>
+              <div class="container contenedor-header w-75">
+                  <h1>DISEÑO Y DESARROLLO WEB</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sequi molestiae adipisci assumenda. Consequuntur excepturi qui blanditiis totam, beatae soluta!</p>
+                  <a href="#dw" class="btn btn-lg btn-ver-mas">Ver más</a>
+              </div>   
+      </div>
+      <div class="carousel-item">
+          <div id="carousel-item-3" class="overlay-image"></div>
+              <div class="container contenedor-header w-75">
+                  <h1>DISEÑO GRÁFICO</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sequi molestiae adipisci assumenda. Consequuntur excepturi qui blanditiis totam, beatae soluta!</p>
+                  <a href="#dg" class="btn btn-lg btn-ver-mas">Ver más</a>
+              </div>   
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#mi-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mi-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+      <!-- ======================= -->
     </header>
-    
-    <!-- waves de https://getwaves.io/ -->
-    <svg class="wave-top wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#74b83d" fill-opacity="1" d="M0,192L80,197.3C160,203,320,213,480,202.7C640,192,800,160,960,149.3C1120,139,1280,149,1360,154.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-    <!-- waves de https://getwaves.io/ -->
 
-    <main id="main-inicio">
-        <div id="texto-main">
-            <p>Comprendemos tus necesidades y por eso trabajamos para ayudarte a cumplir tus objetivos utilizando las diferentes herramientas que tenemos para ofrecerte.</p>
-            <ul>
-                <li>MARKETING DIGITAL</li>
-                <li>SEO/SEM</li>
-                <li>DISEÑO Y DESARROLLO WEB</li>
-                <li>REDES SOCIALES</li>
-                <li>BRANDING</li>
-                <li>E-COMMERCE</li>
-            </ul>
-        </div>
-        <div id="imagen-main">
-            <img src="https://dummyimage.com/400x600/000/fff.png" alt="">
-        </div>  
+    <main>
+      <section>
+        <div class="container col-xxl-8 px-4 py-5 my-5 ">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                  <img src="public/imagen-header.jpg" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width="700" height="auto" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                  <h1 class="display-5 fw-bold lh-1 mb-3">LLEVÁ EL MARKETING DIGITAL DE TU EMPRENDIMIENTO AL SIGUIENTE NIVEL</h1>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                      <a href="https://api.whatsapp.com/send?phone=2944351994" target="_blank"><button type="button" class="btn btn-wpp btn-lg px-4 me-md-2">
+                        <i class="bi bi-whatsapp"></i> CONTACTANOS!
+                      </button>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+      </section>
+      <section class="main-con-fondo">
+          <!-- Bootstrap -->
+          <div class="container px-4 py-5 my-5" id="hanging-icons">
+              <h2 class="pb-2 border-bottom">SERVICIOS</h2>
+              <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="col d-flex align-items-start">
+                  <div class="icon-square text-dark flex-shrink-0 me-3">
+                    <img class="iconos-servicios" src="public/social-media.png" alt="social media">
+                  </div>
+                  <div>
+                    <h2>REDES SOCIALES</h2>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                    <a href="pages/servicios.html#adm-rrss" class="btn btn-ver-mas">
+                      VER MÁS
+                    </a>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                  <div class="icon-square text-dark flex-shrink-0 me-3">
+                    <img class="iconos-servicios"  src="public/website-design.png" alt="website design">
+                  </div>
+                  <div>
+                    <h2>DESARROLLO WEB</h2>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                    <a href="pages/servicios.html#dw" class="btn btn-ver-mas">
+                      VER MÁS
+                    </a>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                  <div class="icon-square text-dark flex-shrink-0 me-3">
+                    <img class="iconos-servicios"  src="public/graphic-design.png" alt="graphic design">
+                  </div>
+                  <div>
+                    <h2>DISEÑO GRÁFICO</h2>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                    <a href="pages/servicios.html#dg" class="btn btn-ver-mas">
+                      VER MÁS
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- ================== -->
+      </section>
     </main>
-    <!-- waves de https://getwaves.io/ -->
-    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#74b83d" fill-opacity="1" d="M0,224L80,218.7C160,213,320,203,480,186.7C640,171,800,149,960,165.3C1120,181,1280,235,1360,261.3L1440,288L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
-    <!-- waves de https://getwaves.io/ -->
+
     <footer>
-        <div id="footer-rrss">
-            <a href="https://www.instagram.com/"><img src="public/ig_Mesa de trabajo 1.png" alt=""></a>
-            <a href="https://www.facebook.com/"><img src="public/fb_Mesa de trabajo 1.png" alt=""></a>
-            <a href="https://wa.me/5492944351994/?text=Hola!%20Quisiera%20contactarme%20con%20ustedes."><img src="public/wpp_Mesa de trabajo 1.png" alt=""></a>
-            <a href="https://www.linkedin.com"><img src="public/lknd_Mesa de trabajo 1.png" alt=""></a> 
+      <div id="contenedor-footer" class="d-flex flex-wrap justify-content-between align-items-center border-top p-3 m-4">
+        <div class="col-md-2 p-2 d-flex align-items-center">
+          <img id="logo-alt" src="public/chiquito-02.png" alt="logo-alt">
+          <span>© 2021 Trébol</span>
         </div>
-        <div>
-            <p>Todos los derechos reservados.</p>
+        <div class="col-md-2 p-2">
+          <ul class="d-flex list-unstyled p-2 justify-content-end">
+            <li class="p-1"><a target="_blank" href="https://www.instagram.com/trebol.ar/"><img id="logo-rrss-footer" src="public/ig_Mesa de trabajo 1.png" alt="logo-ig"></a></li>
+            <li class="p-1"><a target="_blank" href="https://www.facebook.com/trebolmkt/"><img id="logo-rrss-footer" src="public/fb_Mesa de trabajo 1.png" alt="logo-fb"></a></li>
+            <li class="p-1"><a target="_blank" href="https://api.whatsapp.com/send?phone=2944351994"><img id="logo-rrss-footer" src="public/wpp_Mesa de trabajo 1.png" alt="logo-wpp"></a></li>
+          </ul>
         </div>
+      </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- =================0 -->
 </body>
 
 </html>
