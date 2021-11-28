@@ -5,6 +5,9 @@ body {
   font-family: 'Raleway', sans-serif; }
   body h1 {
     font-family: 'Righteous', cursive; }
+  body h3 {
+    font-size: 1em;
+    font-weight: 700; }
 
 .btn-principal {
   color: white;
@@ -60,7 +63,7 @@ body {
 
 /* ==================== */
 #logo-alt {
-  width: 64px; }
+  width: 32px; }
 
 .logo-rrss-footer {
   width: 32px; }
