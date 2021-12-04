@@ -127,19 +127,6 @@ body {
   width: 400px;
   padding: 40px; }
 
-@media screen and (max-width: 768px) {
-  #seccion-servicios {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center; }
-  #rrss-contacto {
-    padding-top: 0 !important;
-    padding-bottom: 30px !important; }
-  #formulario {
-    margin-right: 50px !important;
-    margin-left: 50px !important;
-    width: 75% !important; } }
-
 .card {
   border: none !important; }
 
@@ -153,3 +140,137 @@ body {
   color: white;
   border: none;
   border-radius: 50%; }
+
+#seccion-header-inicio {
+  padding: 1rem;
+  margin: 1rem; }
+  #seccion-header-inicio #header-inicio {
+    margin: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+    #seccion-header-inicio #header-inicio #img-header-inicio {
+      padding: 1rem;
+      width: 50%; }
+    #seccion-header-inicio #header-inicio #header-inicio-texto {
+      padding: 1rem;
+      width: 50%;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center; }
+      #seccion-header-inicio #header-inicio #header-inicio-texto h1 {
+        font-size: 3em;
+        font-weight: bold;
+        text-align: center; }
+      #seccion-header-inicio #header-inicio #header-inicio-texto p {
+        text-align: center;
+        font-size: 2em; }
+
+#inicio-tarjetas {
+  padding-right: 4rem;
+  padding-left: 4rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-bottom: 1rem; }
+
+.tarjeta-inicio {
+  width: 30%;
+  display: flex;
+  flex-flow: column wrap; }
+
+.img-tarjeta {
+  width: 100%; }
+
+.cuerpo-tarjeta {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-between; }
+
+#importante-inicio {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 2rem 1,5rem; }
+  #importante-inicio h2 {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 2rem 4rem; }
+  #importante-inicio p {
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 75%;
+    padding: 1rem 4rem; }
+
+#importante-seccion {
+  padding: 0 4rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center; }
+  #importante-seccion img {
+    width: 50%; }
+  #importante-seccion ul {
+    padding-left: 0;
+    width: 50%;
+    border-radius: 5px; }
+    #importante-seccion ul li {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      margin-bottom: 1rem;
+      list-style-type: none;
+      text-align: center;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.281); }
+      #importante-seccion ul li p {
+        margin: 0; }
+
+@media screen and (max-width: 780px) {
+  #seccion-servicios {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center; }
+  #rrss-contacto {
+    padding-top: 0 !important;
+    padding-bottom: 30px !important; }
+  #formulario {
+    margin-right: 50px !important;
+    margin-left: 50px !important;
+    width: 75% !important; }
+  #seccion-header-inicio {
+    margin: 0; }
+  #header-inicio {
+    margin: 0 !important;
+    padding: 0,5rem !important;
+    flex-flow: column !important;
+    align-items: center; }
+  #img-header-inicio {
+    width: 100% !important;
+    margin: 0,5rem;
+    padding-top: 0; }
+  #header-inicio-texto {
+    width: 100% !important; }
+    #header-inicio-texto h1 {
+      font-size: 2em !important; }
+    #header-inicio-texto p {
+      font-size: 1,5em; }
+  #inicio-tarjetas {
+    flex-flow: column;
+    align-items: center; }
+  .tarjeta-inicio {
+    width: 90%;
+    padding-bottom: 3rem; }
+  #importante-seccion {
+    padding: 0 1rem;
+    flex-flow: column; }
+    #importante-seccion img, #importante-seccion ul {
+      width: 90%; }
+    #importante-seccion img {
+      padding: 1rem 0; }
+    #importante-seccion ul {
+      padding-top: 1rem; }
+    #importante-seccion ul li p {
+      padding: 1rem 1rem; } }

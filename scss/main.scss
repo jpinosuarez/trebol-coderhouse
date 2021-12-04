@@ -4,7 +4,6 @@
 
 // ================================
 
-
 #logo-principal {
     width: $ancho-logo;
 }
@@ -168,22 +167,7 @@ background-size: cover;
     @include tamaño-portfolio(400px, 400px);
 }
 
-@media screen and (max-width: 768px) {
-    #seccion-servicios {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-    }
-    #rrss-contacto {
-        padding-top: 0 !important;
-        padding-bottom: 30px !important;
-    }
-    #formulario {
-        margin-right: 50px !important;
-        margin-left: 50px !important;
-        width: 75% !important;
-    }
-}
+
 
 .card {
     border: none !important;
@@ -200,3 +184,182 @@ background-size: cover;
     border: none;
     border-radius: 50%;
 }
+// Estilos Inicio
+#seccion-header-inicio {
+    padding: 1rem;
+    margin: 1rem;
+    #header-inicio {
+        margin: 2rem;
+        padding: 1rem;
+        display: flex;
+        flex-flow: row-reverse wrap;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        #img-header-inicio {
+            padding: 1rem;
+            width: 50%;
+        }
+        #header-inicio-texto {
+            padding: 1rem;
+            width: 50%;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            h1 {
+                font-size: 3em;
+                font-weight: bold;
+                text-align: center;
+            }
+            p {
+                text-align: center;
+                font-size: 2em;
+            }
+        }
+        #btn-header-inicio {
+
+        }
+    }
+}
+
+// Tarjetas inicio
+
+#inicio-tarjetas {
+    padding-right: 4rem;
+    padding-left: 4rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+}
+
+.tarjeta-inicio {
+    width: 30%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.img-tarjeta {
+    width: 100%;
+}
+
+.cuerpo-tarjeta {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#importante-inicio {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 2rem 1,5rem;
+    h2 {
+        margin-top: 2rem;
+        text-align: center;
+        padding: 2rem 4rem;
+    }
+    p {
+        ;
+        margin-bottom: 2rem;
+        text-align: center;
+        width: 75%;
+        padding: 1rem 4rem;
+    }
+}
+
+#importante-seccion {
+    padding: 0 4rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    img {
+        width: 50%;
+    }
+    ul {
+        padding-left: 0;
+        width: 50%;
+        border-radius: 5px;
+        li {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            margin-bottom: 1rem;
+            list-style-type: none;
+            text-align: center;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.281);
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+// Media queries
+@media screen and (max-width: 780px) {
+    #seccion-servicios {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    #rrss-contacto {
+        padding-top: 0 !important;
+        padding-bottom: 30px !important;
+    }
+    #formulario {
+        margin-right: 50px !important;
+        margin-left: 50px !important;
+        width: 75% !important;
+    }
+    #seccion-header-inicio {
+        margin: 0;
+
+    }
+    #header-inicio {
+        margin: 0 !important;
+        padding: 0,5rem !important;
+        flex-flow: column !important;
+        align-items: center;
+    }
+    #img-header-inicio {
+        width: 100% !important;
+        margin: 0,5rem;
+        padding-top: 0;
+    }
+    #header-inicio-texto {
+        width: 100% !important;
+        h1 {
+            font-size: 2em !important;
+        }
+        p {
+            font-size: 1,5em;
+        }
+    }
+    #inicio-tarjetas {
+        flex-flow: column;
+        align-items: center;
+    }
+    .tarjeta-inicio {
+        width: 90%;
+        padding-bottom: 3rem;
+    }
+    #importante-seccion {
+        padding: 0 1rem;
+        flex-flow: column;
+        img, ul {
+            width: 90%;
+        }
+        img {
+            padding: 1rem 0;
+        }
+        ul {
+            padding-top: 1rem;
+        }
+        ul li p {
+            padding: 1rem 1rem;
+        }
+    }
+}
+// ==============================
