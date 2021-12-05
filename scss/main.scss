@@ -12,6 +12,8 @@ body {
     font-family: 'Raleway', sans-serif;
     h1 {
         font-family: 'Righteous', cursive;
+        text-align: center;
+        padding: 2rem 0 2rem 0;
     }
     h3 {
         font-size: 1em;
@@ -100,63 +102,10 @@ background-size: cover;
     width: 32px;
 }
 
-/* carousel */
-.carousel-item {
-    height: 32rem;
-    background-color: black;
-    color: white;
-    position: relative;
-    background-position: center;
-    background-size: cover;
-}
-
-.overlay-image {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
-    opacity: 0.5;
-    background-position: center;
-    background-size: cover;
-}
-
-.contenedor-header {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    padding-bottom: 50px;
-}
-
-#carousel-item-1 {
-    background-image: url(../public/slide-1.jpg);
-}
-
-#carousel-item-2 {
-    background-image: url(../public/slide-2.jpg);
-}
-
-#carousel-item-3 {
-    background-image: url(../public/slide-3.jpg);
-}
 
 .imagen-perfil {
     border-radius: 53% 47% 48% 52% / 27% 28% 72% 73% ;
 }
-
-#tarjeta-1 {
-    background-image: url(../public/tarjeta-1.jpg);
-}
-
-#tarjeta-2 {
-    background-image: url(../public/tarjeta-2.jpg);
-}
-
-#tarjeta-3 {
-    background-image: url(../public/tarjeta-3.jpg);
-}
-
 @mixin tamaño-portfolio($alto, $ancho) {
     height: $alto;
     width: $ancho;
@@ -225,23 +174,38 @@ background-size: cover;
 }
 
 .tarjeta-inicio {
+    font-size: 1.1em;
     width: 30%;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
+    div {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        a {
+            width: 50%;
+            button {
+                width: 100%;
+            }
+        }
+    }
     .img-tarjeta {
         width: 100%;
         border-radius: 5px;
     }
     .titulo-tarjeta {
+        font-size: 1.2em;
         text-align: center;
-        padding-top: 10px;
+        padding-top: 30px;
+        padding-bottom: 10px;
     }
     .lista-tarjeta {
         list-style-type: none;
+        padding-left: 0;
         li {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding: 10px 0 10px 0;
         border-bottom: 1px solid rgba(0, 0, 0, 0.144);
         }
     }
@@ -256,6 +220,7 @@ background-size: cover;
 }
 
 #importante-inicio {
+    font-size: 1.1em;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -263,7 +228,7 @@ background-size: cover;
     h2 {
         margin-top: 2rem;
         text-align: center;
-        padding: 2rem 4rem;
+        padding: 2rem 4rem 0 4rem;
     }
     p {
         ;
@@ -310,6 +275,10 @@ background-size: cover;
     margin-top: 2rem;
     margin-bottom: 3rem;
     padding: 0 3rem;
+    h2 {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
     #contenedor-circulos {
         display: flex;
         flex-flow: row wrap;
@@ -344,6 +313,7 @@ background-size: cover;
 }
 
 #elegirnos-inicio {
+    font-size: 1.1em;
     h2 {
         text-align: center;
     }
@@ -360,6 +330,7 @@ background-size: cover;
         }
         ul {
             list-style-type: none;
+            width: 50%;
             li {
                 padding-top: 10px;
                 padding-bottom: 10px;
@@ -368,10 +339,46 @@ background-size: cover;
         }
     }
     #botones-elegirnos {
+        margin-top: 30px;
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
+        button {
+            width: 100% !important;
+        }
+}
+}    
+
+#seccion-servicios {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 5rem 0 5rem;
+    .tarjeta-servicios {
+        display: flex;
+        flex-flow: column wrap;
+        width: 18rem;
+        margin: 0;
+        justify-content: space-between;
+        img {
+            width: 18rem;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+        }
+        div {
+            margin: 1rem 0 1rem 0;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            h3 {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+        }
     }
 }
 
@@ -405,6 +412,7 @@ footer {
         display: flex;
         flex-flow: column wrap;
         align-items: center;
+        margin: 0 3rem 0 3rem;
     }
     #rrss-contacto {
         padding-top: 0 !important;
@@ -469,9 +477,28 @@ footer {
             width: 100% !important;
         }
     }
+
+    #importante-inicio {
+        p {
+            padding: 1rem 1rem;
+        }
+        h2 {
+            padding-top: 0;
+            margin-top: 1rem;
+        }
+    }
     
     #elegirnos-inicio {
         padding: 0;
+        div {
+            flex-flow: column;
+            img {
+                width: 100%;
+            }
+            ul {
+                width: 100%;
+            }
+        }
         div ul li {
             text-align: center;
         }

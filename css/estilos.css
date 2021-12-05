@@ -4,7 +4,9 @@
 body {
   font-family: 'Raleway', sans-serif; }
   body h1 {
-    font-family: 'Righteous', cursive; }
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    padding: 2rem 0 2rem 0; }
   body h3 {
     font-size: 1em;
     font-weight: 700; }
@@ -75,52 +77,8 @@ body {
 .iconos-servicios {
   width: 32px; }
 
-/* carousel */
-.carousel-item {
-  height: 32rem;
-  background-color: black;
-  color: white;
-  position: relative;
-  background-position: center;
-  background-size: cover; }
-
-.overlay-image {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  top: 0;
-  opacity: 0.5;
-  background-position: center;
-  background-size: cover; }
-
-.contenedor-header {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  padding-bottom: 50px; }
-
-#carousel-item-1 {
-  background-image: url(../public/slide-1.jpg); }
-
-#carousel-item-2 {
-  background-image: url(../public/slide-2.jpg); }
-
-#carousel-item-3 {
-  background-image: url(../public/slide-3.jpg); }
-
 .imagen-perfil {
   border-radius: 53% 47% 48% 52% / 27% 28% 72% 73%; }
-
-#tarjeta-1 {
-  background-image: url(../public/tarjeta-1.jpg); }
-
-#tarjeta-2 {
-  background-image: url(../public/tarjeta-2.jpg); }
-
-#tarjeta-3 {
-  background-image: url(../public/tarjeta-3.jpg); }
 
 .portfolio {
   height: 400px;
@@ -166,21 +124,33 @@ body {
   padding-bottom: 1rem; }
 
 .tarjeta-inicio {
+  font-size: 1.1em;
   width: 30%;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between; }
+  .tarjeta-inicio div {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; }
+    .tarjeta-inicio div a {
+      width: 50%; }
+      .tarjeta-inicio div a button {
+        width: 100%; }
   .tarjeta-inicio .img-tarjeta {
     width: 100%;
     border-radius: 5px; }
   .tarjeta-inicio .titulo-tarjeta {
+    font-size: 1.2em;
     text-align: center;
-    padding-top: 10px; }
+    padding-top: 30px;
+    padding-bottom: 10px; }
   .tarjeta-inicio .lista-tarjeta {
-    list-style-type: none; }
+    list-style-type: none;
+    padding-left: 0; }
     .tarjeta-inicio .lista-tarjeta li {
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding: 10px 0 10px 0;
       border-bottom: 1px solid rgba(0, 0, 0, 0.144); }
 
 .cuerpo-tarjeta {
@@ -190,6 +160,7 @@ body {
   justify-content: space-between; }
 
 #importante-inicio {
+  font-size: 1.1em;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -197,7 +168,7 @@ body {
   #importante-inicio h2 {
     margin-top: 2rem;
     text-align: center;
-    padding: 2rem 4rem; }
+    padding: 2rem 4rem 0 4rem; }
   #importante-inicio p {
     margin-bottom: 2rem;
     text-align: center;
@@ -235,6 +206,9 @@ body {
   margin-top: 2rem;
   margin-bottom: 3rem;
   padding: 0 3rem; }
+  #datos-inicio h2 {
+    text-align: center;
+    margin-bottom: 3rem; }
   #datos-inicio #contenedor-circulos {
     display: flex;
     flex-flow: row wrap;
@@ -263,31 +237,61 @@ body {
       #datos-inicio #contenedor-circulos .tarjeta-datos p {
         padding: 1rem; }
 
-#elegirnos-inicio h2 {
-  text-align: center; }
+#elegirnos-inicio {
+  font-size: 1.1em; }
+  #elegirnos-inicio h2 {
+    text-align: center; }
+  #elegirnos-inicio div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3rem; }
+    #elegirnos-inicio div img {
+      width: 40%;
+      max-width: 100%;
+      height: auto; }
+    #elegirnos-inicio div ul {
+      list-style-type: none;
+      width: 50%; }
+      #elegirnos-inicio div ul li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.144); }
+  #elegirnos-inicio #botones-elegirnos {
+    margin-top: 30px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; }
+    #elegirnos-inicio #botones-elegirnos button {
+      width: 100% !important; }
 
-#elegirnos-inicio div {
+#seccion-servicios {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 3rem; }
-  #elegirnos-inicio div img {
-    width: 40%;
-    max-width: 100%;
-    height: auto; }
-  #elegirnos-inicio div ul {
-    list-style-type: none; }
-    #elegirnos-inicio div ul li {
-      padding-top: 10px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.144); }
-
-#elegirnos-inicio #botones-elegirnos {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center; }
+  justify-content: space-between;
+  margin: 0 5rem 0 5rem; }
+  #seccion-servicios .tarjeta-servicios {
+    display: flex;
+    flex-flow: column wrap;
+    width: 18rem;
+    margin: 0;
+    justify-content: space-between; }
+    #seccion-servicios .tarjeta-servicios img {
+      width: 18rem;
+      border-radius: 5px;
+      margin-bottom: 2rem; }
+    #seccion-servicios .tarjeta-servicios div {
+      margin: 1rem 0 1rem 0;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center; }
+      #seccion-servicios .tarjeta-servicios div h3 {
+        text-align: center; }
+      #seccion-servicios .tarjeta-servicios div p {
+        text-align: center; }
 
 footer {
   display: flex;
@@ -313,7 +317,8 @@ footer {
   #seccion-servicios {
     display: flex;
     flex-flow: column wrap;
-    align-items: center; }
+    align-items: center;
+    margin: 0 3rem 0 3rem; }
   #rrss-contacto {
     padding-top: 0 !important;
     padding-bottom: 30px !important; }
@@ -359,8 +364,19 @@ footer {
     flex-flow: column !important; }
     #contenedor-circulos .tarjeta-datos {
       width: 100% !important; }
+  #importante-inicio p {
+    padding: 1rem 1rem; }
+  #importante-inicio h2 {
+    padding-top: 0;
+    margin-top: 1rem; }
   #elegirnos-inicio {
     padding: 0; }
+    #elegirnos-inicio div {
+      flex-flow: column; }
+      #elegirnos-inicio div img {
+        width: 100%; }
+      #elegirnos-inicio div ul {
+        width: 100%; }
     #elegirnos-inicio div ul li {
       text-align: center; }
     #elegirnos-inicio button {
