@@ -77,9 +77,6 @@ body {
 .iconos-servicios {
   width: 32px; }
 
-.imagen-perfil {
-  border-radius: 53% 47% 48% 52% / 27% 28% 72% 73%; }
-
 .portfolio {
   height: 400px;
   width: 400px;
@@ -92,7 +89,7 @@ body {
   padding: 1rem;
   margin: 1rem; }
   #seccion-header-inicio #header-inicio {
-    margin: 2rem;
+    margin: 1rem;
     padding: 1rem;
     display: flex;
     flex-flow: row-reverse wrap;
@@ -313,6 +310,75 @@ footer {
     footer div p {
       margin: 0; }
 
+#nosotros-header {
+  margin: 2rem 3rem 4rem 3rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
+  #nosotros-header h1 {
+    font-weight: bold;
+    margin: 3rem 0 0 0; }
+  #nosotros-header div {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: center; }
+    #nosotros-header div p {
+      width: 80%;
+      margin: 2rem 0 0 0;
+      text-align: center;
+      font-size: 1.2em; }
+    #nosotros-header div a {
+      margin: 3.5rem 0; }
+
+#nosotros-img {
+  display: flex;
+  justify-content: center; }
+  #nosotros-img img {
+    width: 50%; }
+
+#nosotros-perfiles {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 4rem 2rem; }
+  #nosotros-perfiles div {
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center; }
+    #nosotros-perfiles div img {
+      width: 50%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%; }
+    #nosotros-perfiles div h2 {
+      margin: 2rem 0 1rem 0;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 400; }
+    #nosotros-perfiles div p {
+      margin: 0.5rem 0;
+      text-align: center; }
+
+#nosotros-valores {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center; }
+  #nosotros-valores h2 {
+    text-align: center; }
+  #nosotros-valores ul {
+    list-style-type: none;
+    columns: 20rem 2;
+    column-gap: 40px;
+    padding: 0;
+    margin: 2rem 1rem; }
+    #nosotros-valores ul li {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+      font-size: 1.2em;
+      font-weight: 400;
+      margin: 1rem 0; }
+
 @media screen and (max-width: 768px) {
   #seccion-servicios {
     display: flex;
@@ -380,4 +446,20 @@ footer {
     #elegirnos-inicio div ul li {
       text-align: center; }
     #elegirnos-inicio button {
-      width: 50% !important; } }
+      width: 50% !important; }
+  #nosotros-header h1 {
+    margin: 0; }
+  #nosotros-header div p {
+    margin: 0; }
+  #nosotros-header h1, #nosotros-header div {
+    width: 100%; }
+  #nosotros-img img {
+    width: 80%; }
+  #nosotros-perfiles {
+    flex-flow: column; }
+    #nosotros-perfiles div {
+      width: 100%; }
+  #nosotros-valores ul {
+    width: 80%; }
+    #nosotros-valores ul li {
+      text-align: center; } }

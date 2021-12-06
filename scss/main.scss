@@ -102,10 +102,6 @@ background-size: cover;
     width: 32px;
 }
 
-
-.imagen-perfil {
-    border-radius: 53% 47% 48% 52% / 27% 28% 72% 73% ;
-}
 @mixin tamaño-portfolio($alto, $ancho) {
     height: $alto;
     width: $ancho;
@@ -130,7 +126,7 @@ background-size: cover;
     padding: 1rem;
     margin: 1rem;
     #header-inicio {
-        margin: 2rem;
+        margin: 1rem;
         padding: 1rem;
         display: flex;
         flex-flow: row-reverse wrap;
@@ -406,6 +402,92 @@ footer {
     }
 }
 
+#nosotros-header {
+    margin: 2rem 3rem 4rem 3rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    h1 {
+        font-weight: bold;
+        margin: 3rem 0 0 0;
+    }
+    div {
+        width: 50%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        p {
+            width: 80%;
+            margin: 2rem 0 0 0;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        a {
+            margin: 3.5rem 0;
+        }
+    }
+}
+
+#nosotros-img {
+    display: flex;
+    justify-content: center;
+    img {
+        width: 50%;
+    }
+}
+
+#nosotros-perfiles {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 4rem 2rem;
+    div {
+        width: 50%;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 50%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        h2 {
+            margin: 2rem 0 1rem 0;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: 400;
+            
+        }
+        p {
+            margin: 0.5rem 0;
+            text-align: center;
+        }
+    }
+}
+
+#nosotros-valores {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    h2 {
+        text-align: center;
+    }
+    ul {
+        list-style-type: none;
+        columns: 20rem 2;
+        column-gap: 40px;
+        padding: 0;
+        margin: 2rem 1rem;
+        li {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+            font-size: 1.2em;
+            font-weight: 400;
+            margin: 1rem 0;
+        }
+    }
+}
+
 // Media queries
 @media screen and (max-width: 768px) {
     #seccion-servicios {
@@ -506,5 +588,41 @@ footer {
             width: 50%!important;
         }
     }
+
+    #nosotros-header {
+        h1 {
+            margin: 0;
+        }
+        div p {
+            margin: 0;
+        }
+        h1, div {
+            width: 100%;
+        }
+        div div {
+    
+        }
+    }
+    
+    #nosotros-img img {
+        width: 80%;
+    }
+    
+    #nosotros-perfiles {
+        flex-flow: column;
+        div {
+            width: 100%;
+        }
+    }
+
+    #nosotros-valores {
+        ul {
+            width: 80%;
+            li {
+                text-align: center;
+            }
+        }
+    }
+    
 }
 // ==============================
