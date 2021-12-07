@@ -6,7 +6,7 @@ body {
   body h1 {
     font-family: 'Righteous', cursive;
     text-align: center;
-    padding: 2rem 0 2rem 0; }
+    margin: 2rem 0 2rem 0; }
   body h3 {
     font-size: 1em;
     font-weight: 700; }
@@ -310,14 +310,19 @@ footer {
     footer div p {
       margin: 0; }
 
+#potfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 20rem);
+  grid-template-rows: repeat(2, 20rem); }
+
 #nosotros-header {
-  margin: 2rem 3rem 4rem 3rem;
+  margin: 0 3rem 4rem 3rem;
   display: flex;
   flex-flow: column;
   align-items: center; }
   #nosotros-header h1 {
     font-weight: bold;
-    margin: 3rem 0 0 0; }
+    margin: 2rem 0; }
   #nosotros-header div {
     width: 50%;
     display: flex;
@@ -378,6 +383,18 @@ footer {
       font-size: 1.2em;
       font-weight: 400;
       margin: 1rem 0; }
+
+#portfolio-header {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center; }
+  #portfolio-header h1 {
+    text-align: center; }
+  #portfolio-header p {
+    text-align: center;
+    width: 60%; }
+  #portfolio-header a {
+    margin-top: 2rem; }
 
 @media screen and (max-width: 768px) {
   #seccion-servicios {

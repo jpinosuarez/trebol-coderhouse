@@ -13,7 +13,7 @@ body {
     h1 {
         font-family: 'Righteous', cursive;
         text-align: center;
-        padding: 2rem 0 2rem 0;
+        margin: 2rem 0 2rem 0;
     }
     h3 {
         font-size: 1em;
@@ -402,14 +402,20 @@ footer {
     }
 }
 
+#potfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 20rem);
+    grid-template-rows: repeat(2, 20rem);
+}
+
 #nosotros-header {
-    margin: 2rem 3rem 4rem 3rem;
+    margin: 0 3rem 4rem 3rem;
     display: flex;
     flex-flow: column;
     align-items: center;
     h1 {
         font-weight: bold;
-        margin: 3rem 0 0 0;
+        margin: 2rem 0;
     }
     div {
         width: 50%;
@@ -486,6 +492,23 @@ footer {
             margin: 1rem 0;
         }
     }
+}
+
+#portfolio-header {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    h1 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        width: 60%;
+    }
+    a {
+        margin-top: 2rem;
+    }
+
 }
 
 // Media queries
