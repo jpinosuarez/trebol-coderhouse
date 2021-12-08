@@ -6,7 +6,9 @@ body {
   body h1 {
     font-family: 'Righteous', cursive;
     text-align: center;
-    margin: 2rem 0 2rem 0; }
+    margin: 2rem 0 2rem 0;
+    color: #61b770;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.123); }
   body h3 {
     font-size: 1em;
     font-weight: 700; }
@@ -406,7 +408,13 @@ footer {
   grid-column-gap: 1rem; }
   #portfolio-grid div {
     margin: 1rem;
-    transition: .2s ease-in-out; }
+    transition: .2s ease-in-out;
+    box-shadow: 2px 3px 12px -1px rgba(0, 0, 0, 0.56);
+    -webkit-box-shadow: 2px 3px 12px -1px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 2px 3px 12px -1px rgba(0, 0, 0, 0.56); }
+    #portfolio-grid div img {
+      width: 300px;
+      height: 300px; }
   #portfolio-grid div:hover {
     transform: scale(1.05); }
 
@@ -420,16 +428,19 @@ footer {
   justify-content: space-around;
   padding-left: 20%;
   padding-right: 20%;
-  margin-top: 3rem;
-  margin-bottom: 3rem; }
+  margin-top: 7rem;
+  margin-bottom: 8rem; }
   #contacto-rrss a {
     width: 6rem;
-    margin: 1rem;
-    transition: .2s ease-in-out; }
+    margin: 1rem; }
     #contacto-rrss a img {
-      width: 100%; }
-    #contacto-rrss a a:hover {
-      transform: scale(1.05); }
+      width: 100%;
+      transition: .2s ease-in-out; }
+    #contacto-rrss a img:hover {
+      transform: scale(1.1); }
+
+#titulo-formulario {
+  border-top: 1px solid rgba(0, 0, 0, 0.164); }
 
 @media screen and (max-width: 768px) {
   #seccion-servicios {
@@ -501,6 +512,8 @@ footer {
       width: 50% !important; }
   #nosotros-header h1 {
     margin: 0; }
+  #nosotros-header div {
+    margin-top: 1rem; }
   #nosotros-header div p {
     margin: 0; }
   #nosotros-header h1, #nosotros-header div {
@@ -516,4 +529,7 @@ footer {
     #nosotros-valores ul li {
       text-align: center; }
   #portfolio-grid {
-    grid-template-columns: 100%; } }
+    grid-template-columns: 100%; }
+  #contacto-rrss {
+    margin-top: 1rem;
+    margin-bottom: 2rem; } }
