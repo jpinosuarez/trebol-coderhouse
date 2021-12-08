@@ -396,6 +396,41 @@ footer {
   #portfolio-header a {
     margin-top: 2rem; }
 
+#portfolio-grid {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 33%));
+  grid-template-rows: repeat(2, auto);
+  justify-items: center;
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem; }
+  #portfolio-grid div {
+    margin: 1rem;
+    transition: .2s ease-in-out; }
+  #portfolio-grid div:hover {
+    transform: scale(1.05); }
+
+#contacto-titulo {
+  text-align: center;
+  margin: 2rem 0 2rem 0; }
+
+#contacto-rrss {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+  #contacto-rrss a {
+    width: 6rem;
+    margin: 1rem;
+    transition: .2s ease-in-out; }
+    #contacto-rrss a img {
+      width: 100%; }
+    #contacto-rrss a a:hover {
+      transform: scale(1.05); }
+
 @media screen and (max-width: 768px) {
   #seccion-servicios {
     display: flex;
@@ -479,4 +514,6 @@ footer {
   #nosotros-valores ul {
     width: 80%; }
     #nosotros-valores ul li {
-      text-align: center; } }
+      text-align: center; }
+  #portfolio-grid {
+    grid-template-columns: 100%; } }
